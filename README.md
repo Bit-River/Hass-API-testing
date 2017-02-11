@@ -1,2 +1,2 @@
-# Hass-API-testing
-Small APIs and Other Code Snippets for Home Assistant
+# HA-API-testing
+Mote API used in my HA setup
