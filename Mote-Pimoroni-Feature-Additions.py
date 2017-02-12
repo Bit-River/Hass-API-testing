@@ -329,7 +329,7 @@ def off_animated_4_mote():
 
 ## 2-Mote - Filling Over - USB port to End
 @app.route(baseurl + version + '/swipe_over_2_mote/colour/<string:c>/<int:ch_a>/<int:ch_b>', methods=['GET'])
-def swipe_over(c,ch_a,ch_b):
+def swipe_over_2_mote(c,ch_a,ch_b):
     global colour
     colour_flow_usb_to_end(c,ch_a)
     colour_flow_end_to_usb(c,ch_b)
@@ -338,10 +338,10 @@ def swipe_over(c,ch_a,ch_b):
 
 ## 2-Mote - Filling Back - End to USB port
 @app.route(baseurl + version + '/swipe_back_2_mote/colour/<string:c>/<int:ch_a>/<int:ch_b>', methods=['GET'])
-def swipe_back(c,ch_a,ch_b):
+def swipe_back_2_mote(c,ch_a,ch_b):
     global colour
-    colour_flow_usb_to_end(c,ch_b)
     colour_flow_end_to_usb(c,ch_a)
+    colour_flow_usb_to_end(c,ch_b)
     get_state('all')
     return jsonify(status)
 
@@ -395,7 +395,7 @@ def cylon_uno_2_mote(c,ch_a,ch_b):
     return jsonify(status)
 
 
-## 4-Mote - Single Light Traveliing Across
+## 4-Mote - Double Light Traveliing
 @app.route(baseurl + version + '/cylon_uno_4_mote/colour/<string:c>', methods=['GET'])
 def cylon_uno_4_mote(c):
     global colour
@@ -419,7 +419,7 @@ def cylon_duo_2_mote(c,ch_a,ch_b):
     return jsonify(status)
 
 
-## 4-Mote - Double Light Traveliing Across
+## 4-Mote - Double Light Travelling Across
 @app.route(baseurl + version + '/cylon_duo_4_mote/colour/<string:c>', methods=['GET'])
 def cylon_duo_4_mote(c):
     global colour
