@@ -1,0 +1,33 @@
+Mote Lights:
+  view: yes
+  entities:
+  - group.mote_lights_2_mote_switches
+  - group.mote_lights_4_mote_switches
+
+
+Mote Lights 2 Mote Switches:
+  view: no
+  entities:
+  - switch.mote_light_2_mote
+  - switch.mote_cylon_uno_2_mote
+  - switch.mote_cylon_duo_2_mote
+  - switch.mote_rainbow_2_mote
+  - switch.mote_tie_dye_2_mote
+  - switch.mote_swipe_in_2_mote
+  - switch.mote_swipe_out_2_mote
+  - switch.mote_swipe_back_2_mote
+  - switch.mote_swipe_over_2_mote
+
+
+Mote Lights 4 Mote Switches:
+  view: no
+  entities:
+  - switch.mote_light_4_mote
+  - switch.mote_cylon_uno_4_mote
+  - switch.mote_cylon_duo_4_mote
+  - switch.mote_rainbow_4_mote
+  - switch.mote_tie_dye_4_mote
+  - switch.mote_swipe_in_4_mote
+  - switch.mote_swipe_out_4_mote
+  - switch.mote_swipe_back_4_mote
+  - switch.mote_swipe_over_4_mote
