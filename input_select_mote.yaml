@@ -1,0 +1,39 @@
+  mote_light_direction:
+    name: Mote Light Effect Direction
+    options:
+      - To USB Port
+      - To End
+    icon: mdi:swap-horizontal
+
+  mote_value_persistence:
+    name: Mote Light Effect Persistence
+    options:
+      - Clears as it Moves
+      - Remains as it Moves
+    icon: mdi:arrange-bring-to-front
+
+
+  mote_effect_channel_option:
+    name: Mote Effect Channel Option
+    options:
+      - All Channels at Once
+      - Channels in Sequence
+    icon: mdi:link-variant
+
+  mote_device_choice:
+    name: Mote Device Choice
+    options:
+      - Stereo
+      - Square Circle
+      - Ceramic Oval
+    icon: mdi:auto-fix
+
+  mote_effect_classes:
+    name: Mote Effect Types
+    options:
+      - Larson Loop
+      - Larson Swipe
+      - Cylon
+      - Bouncewash
+      - Rainbow
+      - Tie dye
