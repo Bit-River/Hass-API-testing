@@ -1,0 +1,7 @@
+- platform: command_line
+  switches:
+    wooden_stereo_lights:
+      command_on: curl -s http://[mote IP]:5000/mote/api/v1.0/larsonloop/1200/0/ee7600/0.1/1/1
+      command_off: curl -s http://[mote IP]:5000/mote/api/v1.0/larsonloop/1200/1/000000/0.11/1/1
+      command_state: python3 /path/to/file/on-off-state-test-stereo.py | grep 'on'
+      friendly_name: Stereo Cabinet
