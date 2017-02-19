@@ -1,33 +1,33 @@
-Mote Lights:
+Mote Control Panel:
   view: yes
   entities:
-  - group.mote_lights_2_mote_switches
-  - group.mote_lights_4_mote_switches
+  - group.mote_colours
+  - group.mote_effects
+  - group.mote_devices
 
-
-Mote Lights 2 Mote Switches:
+Mote Colours:
   view: no
   entities:
-  - switch.mote_light_2_mote
-  - switch.mote_cylon_uno_2_mote
-  - switch.mote_cylon_duo_2_mote
-  - switch.mote_rainbow_2_mote
-  - switch.mote_tie_dye_2_mote
-  - switch.mote_swipe_in_2_mote
-  - switch.mote_swipe_out_2_mote
-  - switch.mote_swipe_back_2_mote
-  - switch.mote_swipe_over_2_mote
+  - switch.mote_custom_switch_rgb
+  - input_slider.mote_value_red
+  - input_slider.mote_value_green
+  - input_slider.mote_value_blue
 
-
-Mote Lights 4 Mote Switches:
+Mote Effects:
   view: no
   entities:
-  - switch.mote_light_4_mote
-  - switch.mote_cylon_uno_4_mote
-  - switch.mote_cylon_duo_4_mote
-  - switch.mote_rainbow_4_mote
-  - switch.mote_tie_dye_4_mote
-  - switch.mote_swipe_in_4_mote
-  - switch.mote_swipe_out_4_mote
-  - switch.mote_swipe_back_4_mote
-  - switch.mote_swipe_over_4_mote
+  - input_select.mote_effect_classes
+  - input_select.mote_light_direction
+  - input_select.mote_value_persistence
+  - input_slider.mote_value_pause_time
+  - input_slider.mote_value_loop_repeats
+#  - input_select.mote_effect_channel_option
+
+Mote Devices:
+  view: no
+  entities:
+  - input_select.mote_device_choice
+  - input_boolean.mote_channel_1
+  - input_boolean.mote_channel_2
+  - input_boolean.mote_channel_3
+  - input_boolean.mote_channel_4
