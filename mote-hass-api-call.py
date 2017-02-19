@@ -2,17 +2,17 @@
 from requests import get
 import os
 
-response = get('http://192.168.178.40:8123/api/states/input_slider.mote_value_red')
+response = get('http://[Home Assistant IP]:8123/api/states/input_slider.mote_value_red')
 r = int(float(response.json()['state']))
 
-response = get('http://192.168.178.40:8123/api/states/input_slider.mote_value_green')
+response = get('http://[Home Assistant IP]:8123/api/states/input_slider.mote_value_green')
 g = int(float(response.json()['state']))
 
-response = get('http://192.168.178.40:8123/api/states/input_slider.mote_value_blue')
+response = get('http://[Home Assistant IP]:8123/api/states/input_slider.mote_value_blue')
 b = int(float(response.json()['state']))
 
 
-response = get('http://192.168.178.40:8123/api/states/input_select.mote_value_persistence')
+response = get('http://[Home Assistant IP]:8123/api/states/input_select.mote_value_persistence')
 persist = str(response.json()['state'])
 if persist == "Clears as it Moves":
     persist = 0
@@ -20,7 +20,7 @@ else:
     persist = 1
 
 
-response = get('http://192.168.178.40:8123/api/states/input_select.mote_light_direction')
+response = get('http://[Home Assistant IP]:8123/api/states/input_select.mote_light_direction')
 direction = str(response.json()['state'])
 if direction == "To End":
     direction = 1
@@ -28,7 +28,7 @@ else:
     direction = 0
 
 
-response = get('http://192.168.178.40:8123/api/states/input_boolean.mote_channel_1')
+response = get('http://[Home Assistant IP]:8123/api/states/input_boolean.mote_channel_1')
 channel_1 = str(response.json()['state'])
 if channel_1 == "on":
     channel_1 = 1
@@ -36,7 +36,7 @@ else:
     channel_1 = 0
 
 
-response = get('http://192.168.178.40:8123/api/states/input_boolean.mote_channel_2')
+response = get('http://[Home Assistant IP]:8123/api/states/input_boolean.mote_channel_2')
 channel_2 = str(response.json()['state'])
 if channel_2 == "on":
     channel_2 = 2
@@ -45,7 +45,7 @@ else:
 
 
 
-response = get('http://192.168.178.40:8123/api/states/input_boolean.mote_channel_3')
+response = get('http://[Home Assistant IP]:8123/api/states/input_boolean.mote_channel_3')
 channel_3 = str(response.json()['state'])
 if channel_3 == "on":
     channel_3 = 3
@@ -53,7 +53,7 @@ else:
     channel_3 = 0
 
 
-response = get('http://192.168.178.40:8123/api/states/input_boolean.mote_channel_4')
+response = get('http://[Home Assistant IP]:8123/api/states/input_boolean.mote_channel_4')
 channel_4 = str(response.json()['state'])
 if channel_4 == "on":
     channel_4 = 4
@@ -61,21 +61,21 @@ else:
     channel_4 = 0
 
 
-response = get('http://192.168.178.40:8123/api/states/input_select.mote_device_choice')
+response = get('http://[Home Assistant IP]:8123/api/states/input_select.mote_device_choice')
 device = str(response.json()['state'])
 if device == "Stereo":
-    device = "http://192.168.178.85:5000/mote/api/v1.0"
+    device = "http://[mote lights IP #1]:5000/mote/api/v1.0"
 elif device == "Square Circle":
-    device = "http://192.168.178.30:5000/mote/api/v1.0"
+    device = "http://[mote lights IP #2]:5000/mote/api/v1.0"
 elif device == "Ceramic Oval":
-    device = "http://192.168.178.80:5000/mote/api/v1.0"
+    device = "http://[mote lights IP #3]:5000/mote/api/v1.0"
 
 
-response = get('http://192.168.178.40:8123/api/states/input_slider.mote_value_pause_time')
+response = get('http://[Home Assistant IP]:8123/api/states/input_slider.mote_value_pause_time')
 pause_time = float(response.json()['state'])
 
 
-response = get('http://192.168.178.40:8123/api/states/input_slider.mote_value_loop_repeats')
+response = get('http://[Home Assistant IP]:8123/api/states/input_slider.mote_value_loop_repeats')
 loop_repeats = int(float(response.json()['state']))
 
 
@@ -83,7 +83,7 @@ loop_repeats = int(float(response.json()['state']))
 #larson_type = str(response.json()['state'])
 
 
-response = get('http://192.168.178.40:8123/api/states/input_select.mote_effect_classes')
+response = get('http://[Home Assistant IP]:8123/api/states/input_select.mote_effect_classes')
 mote_effect_classes = str(response.json()['state'])
 if mote_effect_classes == "Larson Loop":
     mote_effect_classes = "larsonloop_rgb"
