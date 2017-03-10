@@ -123,3 +123,14 @@ def mote_single_led_rgb(ch_selection,led_number,r,g,b):
         if int(ch_selection[c]) != 0:
             mote.set_pixel(int(ch_selection[c]),led_number,r,g,b)
             mote.show()
+
+
+def led_lit():
+    led_lit = "unknown"
+    for chan in range(1, 5):
+        for pixel in range(16):
+            if mote.get_pixel(chan, pixel) != (0, 0, 0):
+                led_lit = "on"
+            elif mote.get_pixel(chan, pixel) == (0, 0, 0):
+                led_lit = "off"
+        return led_lit
