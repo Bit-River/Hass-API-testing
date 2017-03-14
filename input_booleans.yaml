@@ -1,0 +1,30 @@
+mote_channel_1:
+  name: Mote Channel 1
+  initial: off
+  icon: mdi:led-outline
+
+mote_channel_2:
+  name: Mote Channel 2
+  initial: off
+  icon: mdi:led-outline
+
+mote_channel_3:
+  name: Mote Channel 3
+  initial: off
+  icon: mdi:led-outline
+
+mote_channel_4:
+  name: Mote Channel 4
+  initial: off
+  icon: mdi:led-outline
+
+mote_custom_activate:
+  name: Illuminate
+  initial: off
+  icon: mdi:creation
+
+mote_set_default_colour:
+  name: Set Default colour
+  initial: off
+  icon: mdi:format-color-fill
+
