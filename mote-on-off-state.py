@@ -1,3 +1,5 @@
+## No Longer Needed. Left for reference
+
 #!/usr/bin/python3
 from requests import get
 response = get('http://[ MOTE IP ]:5000/mote/api/v1.0/channel/all/state')
