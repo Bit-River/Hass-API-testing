@@ -101,7 +101,7 @@ elif mote_effect_classes == "Tie dye":
 
 mote_stick_settings = str(channel_1) + str(channel_2) + str(channel_3) + str(channel_4)
 break_slash = "/"
-print (mote_effect_classes)
+#print (mote_effect_classes)
 if mote_effect_classes == "rainbow" or mote_effect_classes == "tiedye":
     curl_string_sequence_join = (device, mote_effect_classes)
 else:
